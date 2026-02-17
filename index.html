@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué Cocino Hoy?</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff5722">
+</head>
+<body>
+
+  <h1>🧑‍🍳 Qué Cocino Hoy</h1>
+  <p class="subtitle">Toca los ingredientes que tienes en casa:</p>
+
+  <div class="grid-ingredientes">
+    <button class="boton-ingrediente" onclick="toggle(this, 'papa')">🥔 Papa</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'tomate')">🍅 Tomate</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'cebolla')">🧅 Cebolla</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'zanahoria')">🥕 Zanahoria</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'ajo')">🧄 Ajo</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'morron')">🫑 Morrón</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'zapallito')">🥒 Zapallito</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'lechuga')">🥬 Lechuga</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'huevo')">🥚 Huevo</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'pollo')">🍗 Pollo</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'carne')">🥩 Carne</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'atun')">🐟 Atún</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'jamon')">🥓 Jamón</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'queso')">🧀 Queso</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'leche')">🥛 Leche</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'manteca')">🧈 Manteca</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'crema')">🥛 Crema</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'arroz')">🍚 Arroz</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'fideos')">🍝 Fideos</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'harina')">🌾 Harina</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'pan')">🍞 Pan</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'lentejas')">🍲 Lentejas</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'mayonesa')">🧴 Mayo</button>
+    <button class="boton-ingrediente" onclick="toggle(this, 'aceite')">🫗 Aceite</button>
+  </div>
+
+  <div class="busqueda-extra">
+    <input type="text" id="inputExtra" placeholder="¿Otro ingrediente?">
+    <button onclick="agregarExtra()">+</button>
+  </div>
+  <div id="etiquetasExtras"></div>
+
+  <button class="btn-principal" onclick="buscar()">🔍 BUSCAR RECETAS</button>
+  <button class="btn-fav" onclick="mostrarFavoritos()">❤️ MIS FAVORITOS</button>
+
+  <div id="lista"></div>
+
+  <div id="seccionTips">
+    <h4 style="margin: 0; color: #e65100;">💡 Tip del Chef</h4>
+    <p id="textoTip" style="font-size: 13px; color: #5d4037; margin-top: 5px;">Cargando consejo...</p>
+  </div>
+
+  <footer style="margin-top: 40px; font-size: 12px;">
+    <a href="privacidad.html" style="color: #999;">Política de Privacidad</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
