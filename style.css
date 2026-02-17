@@ -1,0 +1,22 @@
+body { font-family: 'Segoe UI', sans-serif; text-align: center; background: #fdfdfd; color: #333; padding: 20px; max-width: 500px; margin: auto; }
+h1 { color: #ff5722; margin-bottom: 5px; }
+.subtitle { color: #666; margin-bottom: 20px; font-size: 14px; }
+
+.grid-ingredientes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 20px; }
+.boton-ingrediente { background: white; border: 1px solid #ddd; border-radius: 12px; padding: 10px 5px; font-size: 11px; cursor: pointer; transition: 0.2s; }
+.seleccionado { background: #ff5722 !important; color: white !important; border-color: #e64a19; }
+
+.busqueda-extra { margin-bottom: 20px; display: flex; gap: 5px; }
+.busqueda-extra input { flex: 1; padding: 12px; border-radius: 10px; border: 1px solid #ddd; }
+.busqueda-extra button { padding: 10px 15px; border-radius: 10px; border: none; background: #2196F3; color: white; }
+
+.btn-principal { background: #4CAF50; color: white; padding: 15px; border: none; border-radius: 10px; font-weight: bold; width: 100%; font-size: 16px; margin-bottom: 10px; cursor: pointer; }
+.btn-fav { background: #e91e63; color: white; padding: 12px; border: none; border-radius: 10px; width: 100%; font-weight: bold; cursor: pointer; }
+
+.tarjeta-receta { display: flex; background: white; margin-top: 15px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left; flex-direction: column; }
+.tarjeta-receta img { width: 100%; height: 160px; object-fit: cover; }
+.info { padding: 15px; }
+.pasos-detalle { margin-top: 10px; font-size: 14px; color: #444; background: #f9f9f9; padding: 10px; border-radius: 8px; border-left: 4px solid #ff5722; }
+
+#seccionTips { margin-top: 30px; padding: 15px; background: #fff3e0; border-radius: 15px; border: 1px dashed #ffb74d; }
+.tag { background: #e3f2fd; padding: 5px 10px; border-radius: 20px; border: 1px solid #2196F3; font-size: 11px; margin: 2px; display: inline-block; }
